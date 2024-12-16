@@ -70,7 +70,7 @@ cd Modul346-Cloudloesungen-konzipieren-und-realisieren
 ### Alles bereit!  
 Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwicklung oder Ausführung des Projekts fortfahren.
 ------------------------------------------------------------
-### 4. Erstelle die S3-Buckets
+### 5. Erstelle die S3-Buckets
    Die Funktion erstellt automatisch die erforderlichen S3-Buckets, falls sie noch nicht existieren:
    Input-Bucket: inputbucketcsvtojson
    Output-Bucket: outbucketcsvtojson
