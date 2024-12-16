@@ -1,27 +1,16 @@
-# CSV to JSON Converter (AWS Lambda)
-
-Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen konzipieren und realisieren" erstellt. Es wurde von Alex, Louis und Dominick entwickelt und dokumentiert und dient der automatischen Umwandlung von CSV-Dateien in JSON-Dateien, die anschließend in einem AWS S3-Bucket gespeichert werden.
-
-------------------------------------------------------------
-
-### Voraussetzungen
-
-- **AWS CLI**  
-  Die AWS Command Line Interface (CLI) ist ein Tool, das die Verwaltung von AWS-Diensten direkt über die Kommandozeile ermöglicht. Sie wird benötigt, um S3-Buckets zu erstellen und Dateien hochzuladen.
-
-- **Python 3.x**  
-  Python ist eine Programmiersprache, die für die Entwicklung der Lambda-Funktion verwendet wird. In der lokalen Umgebung wird sie genutzt, um den Code zu schreiben und zu testen.
-
-- **boto3**  
-  boto3 ist das offizielle Python SDK (Software Development Kit) für AWS. Es ermöglicht die einfache Interaktion mit AWS-Diensten wie S3, DynamoDB und Lambda in Python.
-
-
-------------------------------------------------------------
 ### Schritte zur Installation der benötigten Tools (Linux)
 
 ---
 
-#### 1. **AWS CLI installieren**
+#### 1. **Repository klonen**
+Bevor du Abhängigkeiten installieren kannst, klone zuerst das Repository:
+```bash
+git clone https://github.com/Logoko709/Modul346-Cloudloesungen-konzipieren-und-realisieren.git
+cd Modul346-Cloudloesungen-konzipieren-und-realisieren
+```
+---
+
+#### 2. **AWS CLI installieren**
 - **Installation auf Ubuntu/Debian:**
   ```bash
   sudo apt update
@@ -35,7 +24,7 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
 
 ---
 
-#### 2. **Python 3.x und pip installieren**
+#### 3. **Python 3.x und pip installieren**
 - **Installation auf Ubuntu/Debian:**
   ```bash
   sudo apt update
@@ -50,53 +39,37 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
 
 ---
 
-#### 3. **Abhängigkeiten aus `requirements.txt` installieren**
-- **Wechsle in das geklonte Repository:**  
-  Navigiere in das Verzeichnis, in dem sich die `requirements.txt` befindet:
-  ```bash
-  cd /pfad/zu/deinem/repository
-  ```
+#### 4. **Abhängigkeiten aus `requirements.txt` installieren**
 - **Installiere die Abhängigkeiten:**  
   Nutze pip, um die Pakete aus der `requirements.txt` zu installieren:
   ```bash
   pip3 install -r requirements.txt
   ```
-
 - **Verifizierung der boto3-Installation:**  
   Überprüfe, ob `boto3` korrekt installiert wurde:
   ```bash
-  pip show boto3
+  pip3 show boto3
   ```
 
 ---
 
 ### Alles bereit!  
 Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwicklung oder Ausführung des Projekts fortfahren.
+
+---
+
+### Projektstruktur
+```
+Modul346-Cloudloesungen-konzipieren-und-realisieren/
+├── lambda_function.py   # Hauptskript für die Lambda-Funktion
+├── requirements.txt    # Python-Abhängigkeiten
+├── example.csv         # Beispiel-CSV-Datei
+├── event.json          # Simuliertes Event für lokale Tests
+└── README.md          # Dokumentation
+```
+
+
 ------------------------------------------------------------
-
-Projektstruktur
-/Modul346-Cloudlösungen-konzipieren-und-realisieren/
-├── lambda_function.py       # Hauptskript für die Lambda-Funktion
-├── requirements.txt         # Python-Abhängigkeiten
-├── example.csv              # Beispiel-CSV-Datei
-├── event.json               # Simuliertes Event für lokale Tests
-└── README.md                # Dokumentation
-
-------------------------------------------------------------
-
-Schritte zur Nutzung
-
-1. Klone das Repository mit folgendem Befehl:
-   ```
-   git clone https://github.com/Logoko709/Modul346-Cloudlösungen-konzipieren-und-realisieren.git
-   cd Modul346-Cloudlösungen-konzipieren-und-realisieren
-   ```
-
-2. Installiere die Abhängigkeiten:
-   ```
-   pip install -r requirements.txt
-   ```
-
 4. Erstelle die S3-Buckets
    Die Funktion erstellt automatisch die erforderlichen S3-Buckets, falls sie noch nicht existieren:
    Input-Bucket: inputbucketcsvtojson
