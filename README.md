@@ -24,6 +24,9 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
   ```bash
   sudo apt update
   sudo apt install awscli -y
+Mit folgendem Befehl lässt sich überprüfen, ob die Installation erfolgreich war:
+ ```bash
+  aws --version
 
 
 ------------------------------------------------------------
