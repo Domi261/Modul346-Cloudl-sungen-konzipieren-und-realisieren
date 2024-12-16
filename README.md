@@ -65,7 +65,7 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
 - **Verifizierung der boto3-Installation:**  
   Überprüfe, ob `boto3` korrekt installiert wurde:
   ```bash
-  python3 -c "import boto3; print('boto3 erfolgreich installiert!')"
+  pip show boto3"
   ```
 
 ---
