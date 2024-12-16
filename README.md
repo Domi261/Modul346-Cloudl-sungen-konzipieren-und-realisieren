@@ -76,13 +76,22 @@ Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwick
    Output-Bucket: outbucketcsvtojson
 
    Alternativ manuell:
+   ```
    aws s3 mb s3://inputbucketcsvtojson
    aws s3 mb s3://outbucketcsvtojson
+   ```
+   Mit folgendenm Befehl
+   ```
+   aws s3 ls
+   ```
+  Können wir auch bestätigen, dass unsere Buckets tatsächlich erstellt wurden.
+  ![create-buckets](create-buckets.png)
 
-5. Lade eine CSV-Datei hoch
+
+6. Lade eine CSV-Datei hoch
    aws s3 cp example.csv s3://inputbucketcsvtojson/
 
-6. Lokale Simulation der Lambda-Funktion
+7. Lokale Simulation der Lambda-Funktion
 
    Erstelle ein Event-JSON (event.json):
    {
@@ -103,7 +112,7 @@ Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwick
    Führe die Funktion lokal aus:
    python lambda_function.py
 
-7. Prüfe den Output
+8. Prüfe den Output
    Nach der Verarbeitung erscheint die JSON-Datei im Output-Bucket (outbucketcsvtojson).
    Lade sie herunter, um sie zu prüfen:
    aws s3 cp s3://outbucketcsvtojson/example.json ./output.json
