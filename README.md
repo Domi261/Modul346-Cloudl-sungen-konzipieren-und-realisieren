@@ -17,6 +17,16 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
 
 
 ------------------------------------------------------------
+### Schritte zur Installation der benötigten Tools (Linux)
+
+#### 1. **AWS CLI installieren**
+- **Installation auf Ubuntu/Debian:**
+  ```bash
+  sudo apt update
+  sudo apt install awscli -y
+
+
+------------------------------------------------------------
 
 Projektstruktur
 /Modul346-Cloudlösungen-konzipieren-und-realisieren/
