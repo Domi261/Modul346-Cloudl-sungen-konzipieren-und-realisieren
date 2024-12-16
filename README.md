@@ -1,3 +1,17 @@
+### Projektstruktur
+Hier in der Projektstruktur sehen wir alle unsere Files, welche wir für das Projekt benötigen.
+Im nächsten Schritt werden alle notwendigen Tool für die Nutzung installiert.
+```
+Modul346-Cloudloesungen-konzipieren-und-realisieren/
+├── lambda_function.py   # Hauptskript für die Lambda-Funktion
+├── requirements.txt    # Python-Abhängigkeiten
+├── example.csv         # Beispiel-CSV-Datei
+├── event.json          # Simuliertes Event für lokale Tests
+└── README.md          # Dokumentation
+```
+
+---
+
 ### Schritte zur Installation der benötigten Tools (Linux)
 
 ---
@@ -56,19 +70,7 @@ cd Modul346-Cloudloesungen-konzipieren-und-realisieren
 ### Alles bereit!  
 Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwicklung oder Ausführung des Projekts fortfahren.
 
----
-
-### Projektstruktur
 ```
-Modul346-Cloudloesungen-konzipieren-und-realisieren/
-├── lambda_function.py   # Hauptskript für die Lambda-Funktion
-├── requirements.txt    # Python-Abhängigkeiten
-├── example.csv         # Beispiel-CSV-Datei
-├── event.json          # Simuliertes Event für lokale Tests
-└── README.md          # Dokumentation
-```
-
-
 ------------------------------------------------------------
 4. Erstelle die S3-Buckets
    Die Funktion erstellt automatisch die erforderlichen S3-Buckets, falls sie noch nicht existieren:
