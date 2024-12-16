@@ -19,16 +19,59 @@ Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen 
 ------------------------------------------------------------
 ### Schritte zur Installation der benötigten Tools (Linux)
 
+---
+
 #### 1. **AWS CLI installieren**
 - **Installation auf Ubuntu/Debian:**
   ```bash
   sudo apt update
   sudo apt install awscli -y
-Mit folgendem Befehl lässt sich überprüfen, ob die Installation erfolgreich war:
- ```bash
+  ```
+- **Verifizierung:**  
+  Mit folgendem Befehl lässt sich überprüfen, ob die Installation erfolgreich war:
+  ```bash
   aws --version
+  ```
 
+---
 
+#### 2. **Python 3.x und pip installieren**
+- **Installation auf Ubuntu/Debian:**
+  ```bash
+  sudo apt update
+  sudo apt install python3 python3-pip -y
+  ```
+- **Verifizierung:**  
+  Überprüfe die installierte Version von Python und pip:
+  ```bash
+  python3 --version
+  pip3 --version
+  ```
+
+---
+
+#### 3. **Abhängigkeiten aus `requirements.txt` installieren**
+- **Wechsle in das geklonte Repository:**  
+  Navigiere in das Verzeichnis, in dem sich die `requirements.txt` befindet:
+  ```bash
+  cd /pfad/zu/deinem/repository
+  ```
+- **Installiere die Abhängigkeiten:**  
+  Nutze pip, um die Pakete aus der `requirements.txt` zu installieren:
+  ```bash
+  pip3 install -r requirements.txt
+  ```
+
+- **Verifizierung der boto3-Installation:**  
+  Überprüfe, ob `boto3` korrekt installiert wurde:
+  ```bash
+  python3 -c "import boto3; print('boto3 erfolgreich installiert!')"
+  ```
+
+---
+
+### Alles bereit!  
+Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwicklung oder Ausführung des Projekts fortfahren.
 ------------------------------------------------------------
 
 Projektstruktur
