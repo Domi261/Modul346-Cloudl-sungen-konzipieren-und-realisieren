@@ -80,11 +80,12 @@ Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwick
    aws s3 mb s3://inputbucketcsvtojson
    aws s3 mb s3://outbucketcsvtojson
    ```
-   Mit folgendenm Befehl
+   Mit folgendenm Befehl:
    ```
    aws s3 ls
    ```
   Können wir auch bestätigen, dass unsere Buckets tatsächlich erstellt wurden.
+  
   ![create-buckets](images/create-buckets.png)
 
 
