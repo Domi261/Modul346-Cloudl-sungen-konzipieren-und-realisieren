@@ -85,7 +85,7 @@ Die notwendigen Tools und Pakete sind installiert. Du kannst nun mit der Entwick
    aws s3 ls
    ```
   Können wir auch bestätigen, dass unsere Buckets tatsächlich erstellt wurden.
-  ![create-buckets](create-buckets.png)
+  ![create-buckets](images/create-buckets.png)
 
 
 6. Lade eine CSV-Datei hoch
