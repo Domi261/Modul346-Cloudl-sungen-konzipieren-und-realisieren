@@ -1,14 +1,20 @@
 # CSV to JSON Converter (AWS Lambda)
 
-Dieses Projekt mit dem Namen "Modul346-Cloudlösungen-konzipieren-und-realisieren" wurde von Logoko709 erstellt. Es dient der automatischen Konvertierung von CSV-Dateien in JSON-Dateien, die in einem AWS S3-Bucket hochgeladen werden.
+Dieses Projekt wurde als Projektabgabe im Rahmen des Moduls 346 "Cloudlösungen konzipieren und realisieren" erstellt. Es wurde von Alex, Louis und Dominick entwickelt und dokumentiert und dient der automatischen Umwandlung von CSV-Dateien in JSON-Dateien, die anschließend in einem AWS S3-Bucket gespeichert werden.
 
 ------------------------------------------------------------
 
-Voraussetzungen
-- AWS CLI: Installiert und konfiguriert mit Zugangsdaten (aws configure).
-- Python 3.x: Lokale Umgebung zur Ausführung der Funktion.
-- boto3: Installiere boto3, falls es nicht vorhanden ist:
-  pip install boto3
+### Voraussetzungen
+
+- **AWS CLI**  
+  Die AWS Command Line Interface (CLI) ist ein Tool, das die Verwaltung von AWS-Diensten direkt über die Kommandozeile ermöglicht. Sie wird benötigt, um S3-Buckets zu erstellen und Dateien hochzuladen.
+
+- **Python 3.x**  
+  Python ist eine Programmiersprache, die für die Entwicklung der Lambda-Funktion verwendet wird. In der lokalen Umgebung wird sie genutzt, um den Code zu schreiben und zu testen.
+
+- **boto3**  
+  boto3 ist das offizielle Python SDK (Software Development Kit) für AWS. Es ermöglicht die einfache Interaktion mit AWS-Diensten wie S3, DynamoDB und Lambda in Python.
+
 
 ------------------------------------------------------------
 
